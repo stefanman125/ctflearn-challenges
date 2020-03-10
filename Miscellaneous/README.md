@@ -11,3 +11,16 @@ There, we see the directory that ctflearn specifically disallowed the directory 
 <img src="images/WhereCanMyRobotGo-2.png"> 
 
 The flag for this level is `CTFlearn{r0b0ts_4r3_th3_futur3}`
+
+## Reversal of fortune
+
+This challenge gives us a string we have to decode. Looking at the string, we see that its written backwards. We can use a simple Python script to print the sentence backwards.
+
+```python
+string = ".nac uoy fi tIe$reveRpilF eldnah ym gnisu em egassem ,avaj yllacificeps ,gnidoc emos htiw pleh deen I ,deifitnedi tegrat txeN"
+print(string[::-1])
+```
+
+<img src="images/ReversalOfFortune-1.png">
+
+The flag for this level is `FlipRever$eIt`
