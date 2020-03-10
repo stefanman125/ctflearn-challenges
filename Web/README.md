@@ -38,4 +38,4 @@ curl --request POST "http://165.227.106.113/post.php" --data "username=admin&pas
 
 <img src="images/POSTPractice-2.png">
 
-The flag for this level is `CTFlearn{p0st_d4t4_4ll_d4y}`
+The flag for this level is `flag{p0st_d4t4_4ll_d4y}`
