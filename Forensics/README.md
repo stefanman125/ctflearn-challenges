@@ -37,3 +37,26 @@ Or, we can use `foremost` to extract the embedded file for us and even generate 
 <img src="images/Binwalk-3.png">
 
 The flag for this level is `ABCTF{b1nw4lk_is_us3ful}`
+
+## A CAPture Of A Flag
+
+This challenge gives a pcap file to analyze. Opening the file in Wireshark, we can see over 7000 packets, there is now way we can manually look through each and every packet. We can use some filters to cut down on the amount of packets we see, such as `dns`, and `http`. Before applying any filters however, it is a good idea to search for some common keystrings such as `flag` or `ctf`. Doing this yields no results, and the reason for this might be that the flag is encoded. One form of encoding we can use to search for encoded keystrings is base64 encoded strings. 
+
+Base64 encoded keystring "flag"
+```shell
+echo -n "flag" | base64
+```
+
+Truncating the result to not include padding yields two results: a GET request and response. On the request, right click on the packet and select `Follow > HTTP Stream`. Here, we notice that the GET request parameter is a base64 encoded string containing our keystring.
+
+<img src="images/ACAPtureOfAFlag-1.png">
+
+Decode this string and you will get the flag.
+
+```shell
+echo -n "ZmxhZ3tBRmxhZ0luUENBUH0=" | base64 -d
+```
+
+<img src="images/ACAPtureOfAFlag-2.png">
+
+The flag for this level is `flag{AFlagInPCAP}`
