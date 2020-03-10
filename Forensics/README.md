@@ -60,3 +60,11 @@ echo -n "ZmxhZ3tBRmxhZ0luUENBUH0=" | base64 -d
 <img src="images/ACAPtureOfAFlag-2.png">
 
 The flag for this level is `flag{AFlagInPCAP}`
+
+## WOW.... So Meta
+
+This challenge gives us an image to examine. The first thing we should always do is run it through `strings` and `grep` for keywords. Run it through `strings` and `grep` for `flag` to get the flag.
+
+<img src="images/WOWSoMeta-1.png">
+
+The flag for this level is `flag{EEe_x_I_FFf}`
