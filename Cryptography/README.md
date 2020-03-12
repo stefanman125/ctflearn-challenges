@@ -18,3 +18,13 @@ done
 <img src="images/CharacterEncoding-1.png">
 
 The flag for this level is `ABCTF{45C11_15_U53FUL}`
+
+## Hextroadinary
+
+This challenge gives you two hexadecimal bytes `0xc4115` and `0x4cf8`, and gives us a hint as to how to get the flag from the challenge description. If you read the description carefully, you can deduct that the challenge requires us to XOR the two hexadecimal values together. We can do this in the command line using:
+
+```shell
+printf '%#x\n' "$((0xc4115 ^ 0x4cf8))"
+```
+
+The flag for this level is `0xc0ded`
