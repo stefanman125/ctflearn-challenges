@@ -1,4 +1,4 @@
-`# Reverse Engineering Challenges
+# Reverse Engineering Challenges
 
 ## Time to Eat
 
@@ -332,3 +332,25 @@ Function7(userInput)
 The input that will get the flag is `341eat009`.
 
 The flag for this level is `CTFlearn{eaten_341eat009}`
+
+## PIN
+
+We are given a 64-bit ELF executable. When we running the executable, it asks us a PIN number. 
+
+<img src="images/PIN-1.png">
+
+We can solve this challenge by writing a brute forcing script, but the intended solution involves reverse engineering. We can use [Radare2](https://rada.re/n/) to disassemble the executable. 
+
+Once disassembled, go to main and enter graph view. 
+
+<img src="images/PIN-2.png">
+
+Here, we can see that `scanf` is called to begin reading our input, and then the function `cek` is called with our input as the argument. If the return value of `cek` is zero, the jump to instruction `0x400623` will be taken, and the "Wrong PIN" message will be shown. If the return value of `cek` is not zero, the jump will not be taken, and we'll get the "Correct PIN" message. Now that we know which value to look for, lets view the `cek` function. 
+
+<img src="images/PIN-3.png">
+
+Here, we see that the argument the function takes is compared the hex value `0x51615`. If the compare instruction returns anything other than 0, the jump will be taken and `cek` will return 0 (thus leading to the "Wrong PIN" string being displayed). If the compare instruction returns 0, the jump will NOT be taken, and the function will return 1, thus leading to the "Correct PIN" message. This tells us that our input needs to matchh `0x51615`, which in decimal is `333333`. 
+
+<img src="images/PIN-4.png">
+
+The flag for this level is `CTFlearn{333333}`
