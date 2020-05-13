@@ -27,4 +27,4 @@ This challenge gives you two hexadecimal bytes `0xc4115` and `0x4cf8`, and gives
 printf '%#x\n' "$((0xc4115 ^ 0x4cf8))"
 ```
 
-The flag for this level is `0xc0ded`
+The flag for this level is `CTFlearn{0xc0ded}`

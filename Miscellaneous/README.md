@@ -23,4 +23,4 @@ print(string[::-1])
 
 <img src="images/ReversalOfFortune-1.png">
 
-The flag for this level is `FlipRever$eIt`
+The flag for this level is `CTFlearn{FlipRever$eIt}`

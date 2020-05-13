@@ -98,4 +98,4 @@ Near the end, make sure to change the `Log.d` statement to have it print out the
 
 <img src="images/WeirdAndroidCalculator-2.png">
 
-The flag for this level is `APK_4nalys1s_1s_r4th3r_3asy_1snt_1t`
+The flag for this level is `CTFlearn{APK_4nalys1s_1s_r4th3r_3asy_1snt_1t}`
