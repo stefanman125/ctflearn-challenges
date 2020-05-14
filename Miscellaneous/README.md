@@ -38,3 +38,11 @@ Here, we can find the flag.
 <img src="images/Wikipedia-2.png">
 
 The flag for this level is `CTFlearn{cNi76bV2IVERlh97hP}`
+
+## QR Code
+
+In this challenge we are given a QR code. We can scan it and see a base64 encoded string. Decoding this string gives us a ROT13 encoded string. We can decode this string and get the flag. 
+
+<img src="images/QRCode-1.png">
+
+The flag for this level is `CTFlearn{n0_body_f0rget_qr_code}`
