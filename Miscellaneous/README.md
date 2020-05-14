@@ -54,3 +54,11 @@ In this challenge we are given a QR code. We can scan it, and see a *Mega* link.
 <img src="images/QRCodeV2-1.png">
 
 The flag for this level is `CTF{2_QR_4_U}`
+
+## IP Tracer
+
+In this challenge, we are given an IP address and tasked to find its geo-location. This can be done with many tools found online, but in this example I used https://tools.keycdn.com/geo. Just enter the given IP address and find the city name.
+
+<img src="images/IPTracer-1.png">
+
+The flag for this level is `CTFlearn{London}`
