@@ -46,3 +46,11 @@ In this challenge we are given a QR code. We can scan it and see a base64 encode
 <img src="images/QRCode-1.png">
 
 The flag for this level is `CTFlearn{n0_body_f0rget_qr_code}`
+
+## QR Code v2
+
+In this challenge we are given a QR code. We can scan it, and see a *Mega* link. Go to the *Mega* and download the `txt` file. The `txt` file contains the flag. 
+
+<img src="images/QRCodeV2-1.png">
+
+The flag for this level is `CTF{2_QR_4_U}`
