@@ -24,3 +24,17 @@ print(string[::-1])
 <img src="images/ReversalOfFortune-1.png">
 
 The flag for this level is `CTFlearn{FlipRever$eIt}`
+
+## Wikipedia
+
+In this challenge, all we are given is: Wikipedia, and 128.125.52.138. This looks like an IP address, and how it is relevant with Wikipedia, is that on Wikipedia you can search for contributions made by people identified by their IP addresses. Just go to [Wikipedia](https://www.wikipedia.org/) and search for the IP address. 
+
+After searching you will notice that there has been one contribution made by someone with the matching IP address. You can look at what they contributed by clicking the "diff" link. 
+
+<img src="images/Wikipedia-1.png">
+
+Here, we can find the flag. 
+
+<img src="images/Wikipedia-2.png">
+
+The flag for this level is `CTFlearn{cNi76bV2IVERlh97hP}`
