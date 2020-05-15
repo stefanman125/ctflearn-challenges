@@ -62,3 +62,13 @@ In this challenge, we are given an IP address and tasked to find its geo-locatio
 <img src="images/IPTracer-1.png">
 
 The flag for this level is `CTFlearn{London}`
+
+## What could this be?
+
+In this challenge we are given a text file containing only six different characters. 
+
+Doing some research, we find out that the language being used here is [JSFuck](http://www.jsfuck.com/). Using that website, we can decode the Javascript and see the flag. 
+
+<img src="images/WhatCouldThisBe-1.png">
+
+The flag for this level is `flag{5uch_j4v4_5crip7_much_w0w}`
